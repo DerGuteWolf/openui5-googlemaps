@@ -10,7 +10,7 @@
         var LoadScripts = (function() {
             var Loader = {};
 
-            Loader.defaultUrl =  location.protocol+'//maps.google.com/maps/api/js?';
+            Loader.defaultUrl =  location.protocol.replace("file","https")+'//maps.google.com/maps/api/js?';
 
             // Loader.defaultUrl = 'https://maps.googleapis.com/maps/api/js?libraries=places&callback=%callback%',
             Loader.notifyEvent = "google.maps.loaded";
